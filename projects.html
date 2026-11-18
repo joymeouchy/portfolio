@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects | Joy Meouchy</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/tables.css">
+<link rel="stylesheet" href="css/images.css">
+</head>
+
+<!-- Page colors: terminal look (black background, green text) -->
+<body bgcolor="#050a05" text="#b8f5b8" link="#5cc8ff" vlink="#ffcc4d" alink="#33ff66">
+
+<a name="top"></a>
+
+<!-- Outer table = the terminal window -->
+<table border="1" width="90%" align="center" cellpadding="12" cellspacing="0" bordercolor="#5f8f5f" bgcolor="#0b120b">
+
+<!-- Title bar row: one cell spanning the whole width -->
+<tr>
+<td bgcolor="#1a241a" colspan="1">
+<font face="Courier New" size="2" color="#ff5f56">&#9679;</font>
+<font face="Courier New" size="2" color="#ffbd2e">&#9679;</font>
+<font face="Courier New" size="2" color="#27c93f">&#9679;</font>
+<font face="Courier New" size="2" color="#5f8f5f"> guest@portfolio: ~/projects</font>
+</td>
+</tr>
+
+<!-- Terminal screen -->
+<tr>
+<td valign="top">
+<font face="Courier New, monospace" size="3">
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~/projects</b></font>$ ls ..</p>
+<table border="0" cellspacing="8" cellpadding="2">
+<tr>
+<td>[<a href="index.html">home</a>]</td>
+<td bgcolor="#33ff66"><font color="black"><b>[projects]</b></font></td>
+<td>[<a href="cv.html">cv</a>]</td>
+<td>[<a href="gallery.html">gallery</a>]</td>
+<td>[<a href="index.html#contact">contact</a>]</td>
+</tr>
+</table>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~/projects</b></font>$ cat README.txt</p>
+
+<h1><font color="#33ff66">Projects</font></h1>
+<p>A selection of my favourite projects from the <b>42 Common Core</b>. Jump to:
+<a href="#transcendence">transcendence</a> |
+<a href="#more">other projects</a></p>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~/projects</b></font>$ cat transcendence/README.md</p>
+
+<a name="transcendence"></a>
+<h2><font color="#33ff66">transcendence: PONG_XP</font></h2>
+<p align="center"><img src="images/screenshot1.jpg" width="480" height="300" border="2" alt="PONG_XP in its Windows XP desktop"></p>
+
+<p><b>PONG_XP</b> is a full-stack web app built around a real-time, online multiplayer version of <b>Pong</b>, wrapped in a nostalgic <b>Windows XP-style desktop</b>. I built it in a team of two: I was the <b>product owner and frontend developer</b>, and my teammate (rdennaou) built the backend and the game engine.</p>
+
+<h3><font color="#ffcc4d">What it does</font></h3>
+<ul>
+<li>Sign up with email and password or with Google
+<li>Edit your profile and upload an avatar
+<li>Add friends, see who is online, and chat live
+<li>Join a matchmaking queue or invite a friend to a match
+<li>Random power-ups, game themes, and a reconnect window if a player drops
+<li>Match history, personal stats and a global leaderboard
+</ul>
+
+<h3><font color="#ffcc4d">My part</font></h3>
+<ul type="square">
+<li>Chose the Windows XP concept and designed the desktop, taskbar, start menu and windows
+<li>Built the login, register and password-reset pages
+<li>Built the game interface: the canvas that draws the match, matchmaking, invitations, game over and rematch
+<li>Built the profile, friends, chat, statistics and leaderboard pages
+<li>Wrote the Privacy Policy and Terms of Service pages
+</ul>
+
+<h3><font color="#ffcc4d">Technologies</font></h3>
+<table border="2" width="100%" cellpadding="6" cellspacing="0" bordercolor="#5f8f5f">
+<tr bgcolor="#131d13"><th align="left">Part</th><th align="left">Tools</th></tr>
+<tr><td nowrap>Frontend (me)</td><td>Next.js, React, TypeScript, SCSS, Tailwind CSS, HTML5 Canvas</td></tr>
+<tr><td nowrap>Backend (teammate)</td><td>Node.js, Express, Socket.IO, Prisma, JWT</td></tr>
+<tr><td nowrap>Database</td><td>PostgreSQL on Supabase</td></tr>
+<tr><td nowrap>Infrastructure</td><td>Docker Compose and a Caddy HTTPS proxy</td></tr>
+</table>
+
+<h3><font color="#ffcc4d">The hardest part</font></h3>
+<p>One user action can fire several real-time events at once, so menus, matchmaking and navigation could easily show stale information. I solved it by handling all game events in one place and cleaning up listeners when a page closes.</p>
+
+<h3><font color="#ffcc4d">Easter eggs</font></h3>
+<p>For fun I added desktop apps inspired by <i>The Hitchhiker's Guide to the Galaxy</i>: <b>Marvin</b> the Paranoid Android answers your questions gloomily, and <b>Deep Thought</b> spends 7,500,000 years computing the answer to life, the universe and everything: <font color="#ffcc4d"><b>42</b></font>.</p>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~/projects</b></font>$ ls other/</p>
+
+<a name="more"></a>
+<h2><font color="#33ff66">Other Core Projects</font></h2>
+<!-- The first column spans several rows (rowspan) -->
+<table border="2" width="100%" cellpadding="6" cellspacing="0" bordercolor="#5f8f5f">
+<tr bgcolor="#131d13">
+<th align="left">Language</th>
+<th align="left">Project</th>
+<th align="left">What I built</th>
+</tr>
+<tr>
+<td rowspan="1" bgcolor="#131d13" valign="top" nowrap><font color="#ffcc4d"><b>Linux</b></font></td>
+<td valign="top" nowrap><a name="born2beroot"></a><b>Born2beroot</b></td>
+<td valign="top">Configured a secure, virtualized Linux server from scratch: system administration, user management and security basics.</td>
+</tr>
+<tr>
+<td rowspan="4" bgcolor="#131d13" valign="top" nowrap><font color="#ffcc4d"><b>C</b></font></td>
+<td valign="top" nowrap><a name="push_swap"></a><b>push_swap</b></td>
+<td valign="top">Designed sorting algorithms that sort a stack using the smallest possible set of operations.</td>
+</tr>
+<tr>
+<td valign="top" nowrap><a name="minishell"></a><b>minishell</b></td>
+<td valign="top">Built my own Unix shell: it parses commands, runs programs, and handles pipes, redirections and environment variables.</td>
+</tr>
+<tr>
+<td valign="top" nowrap><a name="philosophers"></a><b>Philosophers</b></td>
+<td valign="top">Solved the dining philosophers problem with threads and mutexes, avoiding deadlocks.</td>
+</tr>
+<tr>
+<td valign="top" nowrap><a name="cub3d"></a><b>cub3d</b></td>
+<td valign="top">A raycasting 3D maze viewer inspired by 90s first-person shooters.</td>
+</tr>
+<tr>
+<td rowspan="1" bgcolor="#131d13" valign="top" nowrap><font color="#ffcc4d"><b>C++</b></font></td>
+<td valign="top" nowrap><a name="ft_irc"></a><b>ft_irc</b></td>
+<td valign="top">A fully working IRC server, applying object-oriented design and network programming.</td>
+</tr>
+</table>
+
+<p><font color="#5f8f5f"># I also completed Libft, ft_printf, get_next_line, pipex, so_long, NetPractice, Inception and CPP Modules 00 to 09.</font></p>
+
+<hr color="#5f8f5f">
+<!-- Footer -->
+<p><font color="#33ff66">$</font> <span class="cursor">&#9608;</span></p>
+<h6><font color="#5f8f5f"># &copy; 2026 Joy Meouchy &nbsp; | &nbsp; <a href="#top">back to top</a> &nbsp; | &nbsp; <a href="mailto:joymeouchy@gmail.com">email me</a></font></h6>
+
+</font>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

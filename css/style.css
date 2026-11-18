@@ -1,0 +1,54 @@
+/* ===== style.css: base terminal look (used by every page) ===== */
+:root {
+  --bg: #050a05;
+  --term: #0b120b;
+  --text: #b8f5b8;
+  --green: #33ff66;
+  --blue: #5cc8ff;
+  --amber: #ffcc4d;
+  --dim: #5f8f5f;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+  padding: 1.5rem 0.5rem;
+}
+
+::selection { background: var(--green); color: #000; }
+
+/* CRT scanlines over the whole screen */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 2px, rgba(0,0,0,0.18) 3px);
+}
+
+/* The terminal window (the outer table) */
+body > table {
+  box-shadow: 0 0 28px rgba(51, 255, 102, 0.2);
+  max-width: 960px;
+}
+
+/* Prompt-style headings */
+h1, h2, h3 { text-shadow: 0 0 8px rgba(51, 255, 102, 0.45); }
+h1::before { content: "> "; color: var(--dim); }
+h2::before { content: "# "; color: var(--dim); }
+
+/* Links */
+a { text-decoration: none; border-bottom: 1px dotted currentColor; }
+a:hover, a:focus { background: var(--blue); color: #000; border-bottom-color: transparent; }
+
+/* Lists */
+li::marker { color: var(--dim); }
+li { margin: 0.15rem 0; }
+
+hr { border: 0; border-top: 1px dashed var(--dim); }
+
+/* Blinking cursor in the footer */
+.cursor { animation: blink 1s steps(1) infinite; color: var(--green); }
+@keyframes blink { 50% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }

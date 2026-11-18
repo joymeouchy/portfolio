@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joy Meouchy | Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/tables.css">
+<link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/images.css">
+</head>
+
+<!-- Page colors: terminal look (black background, green text) -->
+<body bgcolor="#050a05" text="#b8f5b8" link="#5cc8ff" vlink="#ffcc4d" alink="#33ff66">
+
+<a name="top"></a>
+
+<!-- Outer table = the terminal window -->
+<table border="1" width="90%" align="center" cellpadding="12" cellspacing="0" bordercolor="#5f8f5f" bgcolor="#0b120b">
+
+<!-- Title bar row: one cell spanning the whole width -->
+<tr>
+<td bgcolor="#1a241a" colspan="1">
+<font face="Courier New" size="2" color="#ff5f56">&#9679;</font>
+<font face="Courier New" size="2" color="#ffbd2e">&#9679;</font>
+<font face="Courier New" size="2" color="#27c93f">&#9679;</font>
+<font face="Courier New" size="2" color="#5f8f5f"> guest@portfolio: ~</font>
+</td>
+</tr>
+
+<!-- Terminal screen -->
+<tr>
+<td valign="top">
+<font face="Courier New, monospace" size="3">
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~</b></font>$ ls ..</p>
+<table border="0" cellspacing="8" cellpadding="2">
+<tr>
+<td bgcolor="#33ff66"><font color="black"><b>[home]</b></font></td>
+<td>[<a href="projects.html">projects</a>]</td>
+<td>[<a href="cv.html">cv</a>]</td>
+<td>[<a href="gallery.html">gallery</a>]</td>
+<td>[<a href="index.html#contact">contact</a>]</td>
+</tr>
+</table>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~</b></font>$ cat about.txt</p>
+
+<!-- Nested table: photo on the left, text on the right -->
+<table border="0" cellpadding="8">
+<tr>
+<td valign="top"><img src="images/profile.jpg" width="180" height="180" border="2" alt="Photo of Joy Meouchy"></td>
+<td valign="top">
+<h1><font color="#33ff66">Hi, I'm Joy Meouchy</font></h1>
+<p>I'm an <b>operations professional</b> turned <b>developer</b>. I completed the <b>42 Common Core</b> at 42 Beirut, where I learned to build real software in <b>C</b>, <b>C++</b> and for the <b>web</b>, and I run operations for a growing retail brand.</p>
+<p><font color="#ffcc4d"><i>"WRITE A SAYING OR MOTTO THAT REPRESENTS YOU."</i></font></p>
+</td>
+</tr>
+</table>
+
+<p>Jump to:
+<a href="#details">details</a> |
+<a href="#skills">skills</a> |
+<a href="#featured">featured project</a> |
+<a href="#contact">feedback</a></p>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~</b></font>$ cat details.txt</p>
+
+<a name="details"></a>
+<h2><font color="#33ff66">My Details</font></h2>
+<ul>
+<li><b>Name:</b> Joy Meouchy
+<li><b>Location:</b> Beirut, Lebanon
+<li><b>Programme:</b> 42 Beirut, Common Core (completed)
+<li><b>University:</b> Lebanese University, B.A. in Management
+<li><b>Email:</b> <a href="mailto:joymeouchy@gmail.com">joymeouchy@gmail.com</a>
+<li><b>LinkedIn:</b> <a href="http://www.linkedin.com/in/joy-meouchy">joy-meouchy</a>
+</ul>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~</b></font>$ ./show_skills</p>
+
+<a name="skills"></a>
+<h2><font color="#33ff66">Skills</font></h2>
+<table border="2" width="100%" cellpadding="6" cellspacing="0" bordercolor="#5f8f5f">
+<thead>
+<tr bgcolor="#131d13">
+<th colspan="2" align="center"><font color="#ffcc4d">WHAT I BRING</font></th>
+</tr>
+<tr bgcolor="#131d13">
+<th align="left">Area</th>
+<th align="left">What I do</th>
+</tr>
+</thead>
+<tbody>
+<tr><td nowrap>Operations</td><td>Procurement, suppliers, inventory, logistics, quality control</td></tr>
+<tr><td nowrap>Client management</td><td>B2B accounts, quotations, invoices, status reporting</td></tr>
+<tr><td nowrap>Web &amp; e-commerce</td><td>Shopify, HTML, CSS, responsive design</td></tr>
+<tr><td nowrap>Programming</td><td>C, C++, JavaScript, TypeScript, React</td></tr>
+<tr><td nowrap>Linux &amp; tools</td><td>Linux/Unix, Git/GitHub, Docker, networking basics</td></tr>
+<tr><td nowrap>Project management</td><td>Google Project Management certificate, Agile and Waterfall basics</td></tr>
+<tr><td nowrap>Data &amp; reporting</td><td>Excel, Google Sheets, sales and inventory tracking</td></tr>
+</tbody>
+</table>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~</b></font>$ ls featured/</p>
+
+<a name="featured"></a>
+<h2><font color="#33ff66">Featured Project</font></h2>
+<!-- Clickable image that links to the project's anchor on the Projects page -->
+<table border="0" cellpadding="10" cellspacing="0">
+<tr>
+<td valign="top" align="center">
+<a href="projects.html#transcendence"><img src="images/screenshot1.jpg" width="300" height="190" border="2" alt="PONG_XP desktop screenshot"></a>
+</td>
+<td valign="top">
+<h3><font color="#ffcc4d">transcendence: PONG_XP</font></h3>
+<p>A real-time online multiplayer <b>Pong</b> game inside a nostalgic <b>Windows XP desktop</b>. I built the frontend and designed the whole XP interface.</p>
+<p><a href="projects.html#transcendence">Read the full story</a> | <a href="projects.html">See all projects</a></p>
+</td>
+</tr>
+</table>
+
+<p><font color="#33ff66"><b>guest@portfolio</b></font>:<font color="#5cc8ff"><b>~</b></font>$ ./send_feedback</p>
+
+<a name="contact"></a>
+<h2><font color="#33ff66">Send Me Feedback</font></h2>
+<!-- Form: opens the visitor's email program -->
+<form method="post" action="mailto:joymeouchy@gmail.com" enctype="text/plain">
+
+<p><b>Name:</b>
+<input type="text" name="name" value="Your name" size="25" maxlength="40"></p>
+
+<p><b>Email:</b>
+<input type="text" name="email" size="25" maxlength="50"></p>
+
+<p><b>Your rating:</b>
+<input type="radio" name="rating" value="Great">Great
+<input type="radio" name="rating" value="Good">Good
+<input type="radio" name="rating" value="Needs work">Needs work</p>
+
+<p><b>I liked:</b>
+<input type="checkbox" name="liked_design" value="Design">Design
+<input type="checkbox" name="liked_content" value="Content">Content
+<input type="checkbox" name="liked_projects" value="Projects">Projects</p>
+
+<p><b>Feedback about:</b>
+<select name="topic">
+<option value="Portfolio">My portfolio
+<option value="Project">A project
+<option value="Other">Something else
+</select></p>
+
+<p><b>Comments?</b><br>
+<textarea name="comments" rows="6" cols="50" wrap></textarea></p>
+
+<p><input type="submit" value="Send">
+<input type="reset" value="Clear"></p>
+</form>
+
+<hr color="#5f8f5f">
+<!-- Footer -->
+<p><font color="#33ff66">$</font> <span class="cursor">&#9608;</span></p>
+<h6><font color="#5f8f5f"># &copy; 2026 Joy Meouchy &nbsp; | &nbsp; <a href="#top">back to top</a> &nbsp; | &nbsp; <a href="mailto:joymeouchy@gmail.com">email me</a></font></h6>
+
+</font>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

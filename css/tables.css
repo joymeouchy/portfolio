@@ -1,0 +1,14 @@
+/* ===== tables.css: skills, projects, education and CV tables ===== */
+table[border="2"] { border-collapse: collapse; }
+
+table[border="2"] th {
+  letter-spacing: 0.05em;
+  color: var(--amber);
+}
+
+/* Highlight the row under the mouse (the grouped first column keeps its colour) */
+table[border="2"] tr:hover td:not([rowspan]) {
+  background: rgba(51, 255, 102, 0.09);
+}
+
+table[border="2"] td { vertical-align: top; }

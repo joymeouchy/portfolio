@@ -1,0 +1,17 @@
+/* ===== images.css: profile photo, project screenshots and the gallery ===== */
+img {
+  max-width: 100%;
+  object-fit: cover;
+  background: #0f1a0f;
+  border: 2px solid var(--dim);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+/* Linked and gallery images glow on hover */
+a:hover img, td img:hover {
+  border-color: var(--green);
+  box-shadow: 0 0 14px rgba(51, 255, 102, 0.55);
+}
+
+/* No underline effect on image links */
+a:has(img), a:has(img):hover { border-bottom: 0; background: none; }

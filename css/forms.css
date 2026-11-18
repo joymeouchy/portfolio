@@ -1,0 +1,28 @@
+/* ===== forms.css: the feedback form on the home page ===== */
+input[type="text"], textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: #000;
+  border: 1px solid var(--dim);
+  padding: 0.35rem 0.5rem;
+  max-width: 100%;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--amber);
+}
+
+input[type="radio"], input[type="checkbox"] { accent-color: var(--green); }
+
+input[type="submit"], input[type="reset"] {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.4rem 1.2rem;
+  border: 0;
+  cursor: pointer;
+}
+input[type="submit"] { background: var(--green); color: #000; }
+input[type="reset"]  { background: var(--dim); color: #000; }
+input[type="submit"]:hover, input[type="reset"]:hover { background: var(--amber); }
